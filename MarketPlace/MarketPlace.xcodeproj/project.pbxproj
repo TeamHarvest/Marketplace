@@ -13,8 +13,6 @@
 		781D08921F07BB640095E1C9 /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08891F07BB640095E1C9 /* OrderListTableViewController.swift */; };
 		781D08931F07BB640095E1C9 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D088A1F07BB640095E1C9 /* OrderTableViewController.swift */; };
 		781D08951F07C0730095E1C9 /* MCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08941F07C0730095E1C9 /* MCommon.swift */; };
-		781D08981F07C3D10095E1C9 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08961F07C3D10095E1C9 /* TradeViewController.swift */; };
-		781D08991F07C3D10095E1C9 /* TradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781D08971F07C3D10095E1C9 /* TradeViewController.xib */; };
 		781D089C1F07C3F00095E1C9 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D089A1F07C3F00095E1C9 /* MonitorViewController.swift */; };
 		781D089D1F07C3F00095E1C9 /* MonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781D089B1F07C3F00095E1C9 /* MonitorViewController.xib */; };
 		781D08A01F07C3FC0095E1C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D089E1F07C3FC0095E1C9 /* NotificationViewController.swift */; };
@@ -27,6 +25,10 @@
 		781D08AE1F07C8270095E1C9 /* TradeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781D08AC1F07C8270095E1C9 /* TradeTableViewCell.xib */; };
 		781D08B01F07D7D50095E1C9 /* TradeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08AF1F07D7D50095E1C9 /* TradeBannerView.swift */; };
 		781D08B21F07D7E70095E1C9 /* TradeBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781D08B11F07D7E70095E1C9 /* TradeBannerView.xib */; };
+		781D08B51F084DE00095E1C9 /* PaymentModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08B31F084DE00095E1C9 /* PaymentModeTableViewCell.swift */; };
+		781D08B61F084DE00095E1C9 /* PaymentModeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08B41F084DE00095E1C9 /* PaymentModeTableViewController.swift */; };
+		781D08B81F084E230095E1C9 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08B71F084E230095E1C9 /* TradeViewController.swift */; };
+		781D08BC1F0850570095E1C9 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D08BB1F0850570095E1C9 /* OrderDetailViewController.swift */; };
 		955899DA612992047018E6ED /* Pods_MarketPlace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F39C362C4B556B198AA1FBF /* Pods_MarketPlace.framework */; };
 		F1257FA81F081BB100411090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FA71F081BB100411090 /* AppDelegate.swift */; };
 		F1257FAA1F081BB100411090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FA91F081BB100411090 /* ViewController.swift */; };
@@ -62,8 +64,6 @@
 		781D08891F07BB640095E1C9 /* OrderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		781D088A1F07BB640095E1C9 /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		781D08941F07C0730095E1C9 /* MCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCommon.swift; sourceTree = "<group>"; };
-		781D08961F07C3D10095E1C9 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
-		781D08971F07C3D10095E1C9 /* TradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeViewController.xib; sourceTree = "<group>"; };
 		781D089A1F07C3F00095E1C9 /* MonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
 		781D089B1F07C3F00095E1C9 /* MonitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonitorViewController.xib; sourceTree = "<group>"; };
 		781D089E1F07C3FC0095E1C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +76,10 @@
 		781D08AC1F07C8270095E1C9 /* TradeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeTableViewCell.xib; sourceTree = "<group>"; };
 		781D08AF1F07D7D50095E1C9 /* TradeBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeBannerView.swift; sourceTree = "<group>"; };
 		781D08B11F07D7E70095E1C9 /* TradeBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradeBannerView.xib; sourceTree = "<group>"; };
+		781D08B31F084DE00095E1C9 /* PaymentModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModeTableViewCell.swift; sourceTree = "<group>"; };
+		781D08B41F084DE00095E1C9 /* PaymentModeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModeTableViewController.swift; sourceTree = "<group>"; };
+		781D08B71F084E230095E1C9 /* TradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		781D08BB1F0850570095E1C9 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		8F39C362C4B556B198AA1FBF /* Pods_MarketPlace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketPlace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1257FA41F081BB100411090 /* MarketPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1257FA71F081BB100411090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,8 +147,11 @@
 			children = (
 				781D08871F07BB640095E1C9 /* HomeCollectionViewCell.swift */,
 				781D08881F07BB640095E1C9 /* HomeViewController.swift */,
+				781D08BB1F0850570095E1C9 /* OrderDetailViewController.swift */,
 				781D08891F07BB640095E1C9 /* OrderListTableViewController.swift */,
 				781D088A1F07BB640095E1C9 /* OrderTableViewController.swift */,
+				781D08B31F084DE00095E1C9 /* PaymentModeTableViewCell.swift */,
+				781D08B41F084DE00095E1C9 /* PaymentModeTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,8 +186,7 @@
 		781D088E1F07BB640095E1C9 /* Trade */ = {
 			isa = PBXGroup;
 			children = (
-				781D08961F07C3D10095E1C9 /* TradeViewController.swift */,
-				781D08971F07C3D10095E1C9 /* TradeViewController.xib */,
+				781D08B71F084E230095E1C9 /* TradeViewController.swift */,
 				781D08AB1F07C8270095E1C9 /* TradeTableViewCell.swift */,
 				781D08AC1F07C8270095E1C9 /* TradeTableViewCell.xib */,
 				781D08AF1F07D7D50095E1C9 /* TradeBannerView.swift */,
@@ -389,7 +395,6 @@
 				F1257FAD1F081BB100411090 /* Main.storyboard in Resources */,
 				781D08AE1F07C8270095E1C9 /* TradeTableViewCell.xib in Resources */,
 				781D08A11F07C3FC0095E1C9 /* NotificationViewController.xib in Resources */,
-				781D08991F07C3D10095E1C9 /* TradeViewController.xib in Resources */,
 				781D089D1F07C3F00095E1C9 /* MonitorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,17 +469,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				781D08951F07C0730095E1C9 /* MCommon.swift in Sources */,
+				781D08B51F084DE00095E1C9 /* PaymentModeTableViewCell.swift in Sources */,
 				781D08B01F07D7D50095E1C9 /* TradeBannerView.swift in Sources */,
 				781D08901F07BB640095E1C9 /* HomeCollectionViewCell.swift in Sources */,
 				781D08A01F07C3FC0095E1C9 /* NotificationViewController.swift in Sources */,
 				781D08921F07BB640095E1C9 /* OrderListTableViewController.swift in Sources */,
 				781D08AD1F07C8270095E1C9 /* TradeTableViewCell.swift in Sources */,
 				781D089C1F07C3F00095E1C9 /* MonitorViewController.swift in Sources */,
-				781D08981F07C3D10095E1C9 /* TradeViewController.swift in Sources */,
-				781D08981F07C3D10095E1C9 /* OrderDetailViewController.swift in Sources */,
 				F1257FAA1F081BB100411090 /* ViewController.swift in Sources */,
+				781D08B81F084E230095E1C9 /* TradeViewController.swift in Sources */,
 				F1257FB01F081BB100411090 /* MarketPlace.xcdatamodeld in Sources */,
 				781D08931F07BB640095E1C9 /* OrderTableViewController.swift in Sources */,
+				781D08BC1F0850570095E1C9 /* OrderDetailViewController.swift in Sources */,
+				781D08B61F084DE00095E1C9 /* PaymentModeTableViewController.swift in Sources */,
 				F1257FA81F081BB100411090 /* AppDelegate.swift in Sources */,
 				781D08A91F07C50A0095E1C9 /* RootViewController.swift in Sources */,
 				781D08A41F07C4070095E1C9 /* ProfileViewController.swift in Sources */,
@@ -636,6 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2SXWB2TAK;
 				INFOPLIST_FILE = MarketPlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelhack.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -650,6 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2SXWB2TAK;
 				INFOPLIST_FILE = MarketPlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelhack.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";

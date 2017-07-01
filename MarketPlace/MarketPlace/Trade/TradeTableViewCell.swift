@@ -11,13 +11,20 @@ import GoogleMaps
 
 enum TradeTableViewCellStyleRow: Int {
     case Row0 = 0
+    case Row1 = 1
+    case Row2 = 2
+    case Row3 = 3
 }
 
-let height0:CGFloat = 0
+internal let height0:CGFloat = 60
+internal let height1:CGFloat = 40
+internal let height2:CGFloat = 300
+internal let height3:CGFloat = 100
 
 class TradeTableViewCell: UITableViewCell {
 
     // 0
+    @IBOutlet weak var searchLabel0: UILabel?
     @IBOutlet weak var searchButton0: UIButton?
     @IBOutlet weak var buyerButton0: UIButton?
     @IBOutlet weak var sellerButton0: UIButton?
@@ -35,7 +42,7 @@ class TradeTableViewCell: UITableViewCell {
     var totalPages3: Int = 0
     
     class func cellFromNib(_ index: Int) -> TradeTableViewCell {
-        var array = Bundle.main.loadNibNamed(NSStringFromClass(self), owner: nil, options: nil)
+        var array = Bundle.main.loadNibNamed("TradeTableViewCell", owner: nil, options: nil)
         
         let cell = array?[index] as! TradeTableViewCell
         cell.backgroundColor = UIColor.clear
@@ -44,6 +51,17 @@ class TradeTableViewCell: UITableViewCell {
     }
     
     class func cellHeightWithStyle(_ style:TradeTableViewCellStyleRow) -> CGFloat {
-        return height0
+        
+        switch style {
+            case .Row0:
+                return height0
+            case .Row1:
+                return height1
+            case .Row2:
+                return height2
+            case .Row3:
+                return height3
+        }
+        
     }
 }

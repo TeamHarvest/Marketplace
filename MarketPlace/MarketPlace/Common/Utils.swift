@@ -16,6 +16,8 @@ internal var KEY_MODE_OF_PAYMENT = "modeOfPayment"
 internal var KEY_HOW_OFTEN = "howOften"
 internal var KEY_BUY_DATE = "buyDate"
 
+internal var KEY_PAYMENT_MODE_CHOSEN = "KEY_PAYMENT_MODE_CHOSEN"
+
 internal var COLOR_ACCENT_BLUE = "#28d4ce"
 
 open class Utils {
