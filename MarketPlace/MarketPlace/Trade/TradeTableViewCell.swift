@@ -32,7 +32,7 @@ class TradeTableViewCell: UITableViewCell {
     // 3
     @IBOutlet weak var scrollView3: UIScrollView?
     @IBOutlet weak var pageControl3: UIPageControl?
-    var totalPages3: Int
+    var totalPages3: Int = 0
     
     class func cellFromNib(_ index: Int) -> TradeTableViewCell {
         var array = Bundle.main.loadNibNamed(NSStringFromClass(self), owner: nil, options: nil)
