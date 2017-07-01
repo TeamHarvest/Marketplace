@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var btn_fbLogin: UIButton!
+    @IBOutlet var btn_login: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        btn_login.layer.cornerRadius = 15.0
+        
+        btn_fbLogin.layer.cornerRadius = 15.0
     }
 
     override func didReceiveMemoryWarning() {

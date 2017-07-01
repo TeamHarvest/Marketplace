@@ -471,6 +471,7 @@
 				781D08AD1F07C8270095E1C9 /* TradeTableViewCell.swift in Sources */,
 				781D089C1F07C3F00095E1C9 /* MonitorViewController.swift in Sources */,
 				781D08981F07C3D10095E1C9 /* TradeViewController.swift in Sources */,
+				781D08981F07C3D10095E1C9 /* OrderDetailViewController.swift in Sources */,
 				F1257FAA1F081BB100411090 /* ViewController.swift in Sources */,
 				F1257FB01F081BB100411090 /* MarketPlace.xcdatamodeld in Sources */,
 				781D08931F07BB640095E1C9 /* OrderTableViewController.swift in Sources */,
