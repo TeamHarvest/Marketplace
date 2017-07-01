@@ -1,0 +1,78 @@
+PODS:
+  - Alamofire (4.5.0)
+  - BEMCheckBox (1.4.1)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - DateTools (2.0.0)
+  - Fabric (1.6.11)
+  - FBSDKCoreKit (4.24.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.24.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.24.0):
+    - FBSDKCoreKit
+  - FSCalendar (2.7.9)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.3.1):
+    - GoogleMaps (= 2.3.1)
+    - GooglePlaces (= 2.3.1)
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+  - HCSStarRatingView (1.5)
+  - LoremIpsum (1.0.0)
+  - SAMKeychain (1.5.2)
+  - SlackTextViewController (1.9.5)
+  - Socket.IO-Client-Swift (10.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - BEMCheckBox
+  - Crashlytics
+  - DateTools
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - FSCalendar
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - HCSStarRatingView
+  - LoremIpsum
+  - SAMKeychain
+  - SlackTextViewController
+  - Socket.IO-Client-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
+  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
+  FBSDKShareKit: a2ed9d7781a4eda9ac20d7404305e795b10251ac
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
+  Socket.IO-Client-Swift: f6553633ba6a01df8f1c8b583ec36560901e9de6
+
+PODFILE CHECKSUM: 5571a37eba22aed9150228900ea0a884e763bdef
+
+COCOAPODS: 1.2.1
