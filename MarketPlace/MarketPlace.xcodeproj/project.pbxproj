@@ -15,6 +15,9 @@
 		F1257FC01F081BB100411090 /* MarketPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FBF1F081BB100411090 /* MarketPlaceTests.swift */; };
 		F1257FCB1F081BB100411090 /* MarketPlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FCA1F081BB100411090 /* MarketPlaceUITests.swift */; };
 		F1257FD91F081F3F00411090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1257FD81F081F3F00411090 /* Assets.xcassets */; };
+		F1257FE11F082EB500411090 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE01F082EB500411090 /* HomeViewController.swift */; };
+		F1257FE51F082F0D00411090 /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */; };
+		F1257FE71F08333F00411090 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE61F08333F00411090 /* OrderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F1257FCA1F081BB100411090 /* MarketPlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceUITests.swift; sourceTree = "<group>"; };
 		F1257FCC1F081BB100411090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1257FD81F081F3F00411090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1257FE01F082EB500411090 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
+		F1257FE61F08333F00411090 /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,12 @@
 		F1257FA61F081BB100411090 /* MarketPlace */ = {
 			isa = PBXGroup;
 			children = (
+				F1257FDF1F082E8600411090 /* Settings */,
+				F1257FDE1F082E7D00411090 /* Notification */,
+				F1257FDD1F082E6E00411090 /* Monitor */,
+				F1257FDC1F082E6700411090 /* Explore */,
 				F1257FA71F081BB100411090 /* AppDelegate.swift */,
+				F1257FDB1F082E5300411090 /* Home */,
 				F1257FA91F081BB100411090 /* ViewController.swift */,
 				F1257FAB1F081BB100411090 /* Main.storyboard */,
 				F1257FB31F081BB100411090 /* LaunchScreen.storyboard */,
@@ -126,6 +137,44 @@
 				F1257FCC1F081BB100411090 /* Info.plist */,
 			);
 			path = MarketPlaceUITests;
+			sourceTree = "<group>";
+		};
+		F1257FDB1F082E5300411090 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F1257FE01F082EB500411090 /* HomeViewController.swift */,
+				F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */,
+				F1257FE61F08333F00411090 /* OrderTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F1257FDC1F082E6700411090 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		F1257FDD1F082E6E00411090 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Monitor;
+			sourceTree = "<group>";
+		};
+		F1257FDE1F082E7D00411090 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		F1257FDF1F082E8600411090 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1257FE51F082F0D00411090 /* OrderListTableViewController.swift in Sources */,
 				F1257FAA1F081BB100411090 /* ViewController.swift in Sources */,
 				F1257FB01F081BB100411090 /* MarketPlace.xcdatamodeld in Sources */,
 				F1257FA81F081BB100411090 /* AppDelegate.swift in Sources */,
+				F1257FE71F08333F00411090 /* OrderTableViewController.swift in Sources */,
+				F1257FE11F082EB500411090 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +572,7 @@
 				F1257FD11F081BB100411090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1257FD21F081BB100411090 /* Build configuration list for PBXNativeTarget "MarketPlaceTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +581,7 @@
 				F1257FD41F081BB100411090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1257FD51F081BB100411090 /* Build configuration list for PBXNativeTarget "MarketPlaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +590,7 @@
 				F1257FD71F081BB100411090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
