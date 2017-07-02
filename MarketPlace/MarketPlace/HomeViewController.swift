@@ -49,7 +49,20 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             howOften = UserDefaults.standard.stringArray(forKey: KEY_HOW_OFTEN)!
             buyDate = UserDefaults.standard.stringArray(forKey: KEY_BUY_DATE)!
             
+            lbl_totalOrder.text = "\(imageName.count - 1)"
             
+            var spent = Int()
+            if(imageName[1] == "apple"){
+                spent = Int(noOfKg[1])!*50
+            }else if(imageName[1] == "orange"){
+                spent = Int(noOfKg[1])!*60
+            }else if(imageName[1] == "mango"){
+                spent = Int(noOfKg[1])!*80
+            }else{
+                spent = Int(noOfKg[1])!*70
+            }
+            
+            lbl_totalSpent.text = "\(spent)"
             
             colView_order.reloadData()
             print("viewWillAppear")
@@ -70,7 +83,13 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! HomeCollectionViewCell
         cell.img_product.image = UIImage(named: imageName[indexPath.row])
-        cell.lbl_kg.text = noOfKg[indexPath.row]
+        if(indexPath.row == 0){
+            cell.lbl_kg.text = noOfKg[indexPath.row]
+        }else{
+            cell.lbl_kg.text = noOfKg[indexPath.row] + " Kg"
+        }
+
+        
         cell.lbl_modeOfPay.text = modeOfPayment[indexPath.row]
         cell.lbl_often.text = howOften[indexPath.row]
         cell.lbl_date.text = buyDate[indexPath.row]
@@ -83,6 +102,21 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
+
+        if(indexPath.item == 0){
+            
+            //Go to Order Controller
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderTableViewController") as! OrderTableViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+            
+        }else{
+            
+            //Go to Order Detail Controller
+            let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "OrderDetailViewController") as! OrderDetailViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+        }
+        
     }
 
 }

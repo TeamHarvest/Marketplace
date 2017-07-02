@@ -37,6 +37,9 @@ class OrderTableViewController: UITableViewController {
     var howOften = [String]()
     var buyDate = [String]()
     
+    var tempProduct = String()
+    var tempHowOften = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -149,6 +152,7 @@ class OrderTableViewController: UITableViewController {
         btn_orange.layer.borderColor = UIColor.gray.cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
+        tempProduct = "apple"
     }
     @IBAction func orange(_ sender: Any) {
         print("orange")
@@ -156,6 +160,7 @@ class OrderTableViewController: UITableViewController {
         btn_orange.layer.borderColor = UIColor.green.cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
+        tempProduct = "orange"
     }
     @IBAction func mango(_ sender: Any) {
         print("mango")
@@ -163,13 +168,15 @@ class OrderTableViewController: UITableViewController {
         btn_orange.layer.borderColor = UIColor.gray.cgColor
         btn_mango.layer.borderColor = UIColor.green.cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
+        tempProduct = "mango"
     }
     @IBAction func banana(_ sender: Any) {
-        print("banan")
+        print("banana")
         btn_apple.layer.borderColor = UIColor.gray.cgColor
         btn_orange.layer.borderColor = UIColor.gray.cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
         btn_banana.layer.borderColor = UIColor.green.cgColor
+        tempProduct = "banana"
     }
     
     //How Often
@@ -178,41 +185,44 @@ class OrderTableViewController: UITableViewController {
         btn_daily.layer.borderColor = UIColor.gray.cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
+        tempHowOften = "Once"
     }
     @IBAction func daily(_ sender: Any) {
         btn_once.layer.borderColor = UIColor.gray.cgColor
         btn_daily.layer.borderColor = UIColor.green.cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
+        tempHowOften = "Daily"
     }
     @IBAction func weekly(_ sender: Any) {
         btn_once.layer.borderColor = UIColor.gray.cgColor
         btn_daily.layer.borderColor = UIColor.gray.cgColor
         btn_weekly.layer.borderColor = UIColor.green.cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
+        tempHowOften = "Weekly"
     }
     @IBAction func monthly(_ sender: Any) {
         btn_once.layer.borderColor = UIColor.gray.cgColor
         btn_daily.layer.borderColor = UIColor.gray.cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
         btn_monthly.layer.borderColor = UIColor.green.cgColor
+        tempHowOften = "Monthly"
     }
 
     //Order
     @IBAction func order(_ sender: Any) {
         
-        imageName.append("banana")
-        noOfKg.append("10")
-        modeOfPayment.append("Cash")
-        howOften.append("Daily")
-        buyDate.append("07/01/2017")
+        imageName = UserDefaults.standard.stringArray(forKey: KEY_IMAGE_NAME) ?? ["plus"]
+        noOfKg = UserDefaults.standard.stringArray(forKey: KEY_NO_OF_KG) ?? ["Add an Order"]
+        modeOfPayment = UserDefaults.standard.stringArray(forKey: KEY_MODE_OF_PAYMENT) ?? [""]
+        howOften = UserDefaults.standard.stringArray(forKey: KEY_HOW_OFTEN) ?? [""]
+        buyDate = UserDefaults.standard.stringArray(forKey: KEY_BUY_DATE) ?? [""]
         
-        
-//        imageName[0] = "banana"
-//        noOfKg[0] = "10"
-//        modeOfPayment[0] = "Cash"
-//        howOften[0] = "Daily"
-//        buyDate[0] = "07/01/2017"
+        imageName.append(tempProduct)
+        noOfKg.append(input_quantity.text!)
+        modeOfPayment.append(input_modeOfPay.text!)
+        howOften.append(tempHowOften)
+        buyDate.append(input_date.text!)
         
         UserDefaults.standard.set(imageName, forKey: KEY_IMAGE_NAME)
         UserDefaults.standard.set(noOfKg, forKey: KEY_NO_OF_KG)
