@@ -21,6 +21,8 @@
 		F1257FEB1F08537D00411090 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FEA1F08537D00411090 /* Utils.swift */; };
 		F1257FED1F0857DA00411090 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FEC1F0857DA00411090 /* HomeCollectionViewCell.swift */; };
 		F1257FEF1F08912600411090 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FEE1F08912600411090 /* OrderDetailViewController.swift */; };
+		F12CB8311F08CE52006632BD /* PaymentModeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CB8301F08CE52006632BD /* PaymentModeTableViewController.swift */; };
+		F12CB8331F08CE63006632BD /* PaymentModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CB8321F08CE63006632BD /* PaymentModeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F1257FEA1F08537D00411090 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F1257FEC1F0857DA00411090 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1257FEE1F08912600411090 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		F12CB8301F08CE52006632BD /* PaymentModeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModeTableViewController.swift; sourceTree = "<group>"; };
+		F12CB8321F08CE63006632BD /* PaymentModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */,
 				F1257FE61F08333F00411090 /* OrderTableViewController.swift */,
 				F1257FEE1F08912600411090 /* OrderDetailViewController.swift */,
+				F12CB8301F08CE52006632BD /* PaymentModeTableViewController.swift */,
+				F12CB8321F08CE63006632BD /* PaymentModeTableViewCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -336,10 +342,12 @@
 				F1257FAA1F081BB100411090 /* ViewController.swift in Sources */,
 				F1257FB01F081BB100411090 /* MarketPlace.xcdatamodeld in Sources */,
 				F1257FEB1F08537D00411090 /* Utils.swift in Sources */,
+				F12CB8331F08CE63006632BD /* PaymentModeTableViewCell.swift in Sources */,
 				F1257FA81F081BB100411090 /* AppDelegate.swift in Sources */,
 				F1257FE71F08333F00411090 /* OrderTableViewController.swift in Sources */,
 				F1257FE11F082EB500411090 /* HomeViewController.swift in Sources */,
 				F1257FED1F0857DA00411090 /* HomeCollectionViewCell.swift in Sources */,
+				F12CB8311F08CE52006632BD /* PaymentModeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2SXWB2TAK;
 				INFOPLIST_FILE = MarketPlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelhack.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2SXWB2TAK;
 				INFOPLIST_FILE = MarketPlace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelhack.MarketPlace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
