@@ -16,6 +16,8 @@ internal var KEY_MODE_OF_PAYMENT = "modeOfPayment"
 internal var KEY_HOW_OFTEN = "howOften"
 internal var KEY_BUY_DATE = "buyDate"
 
+internal var COLOR_ACCENT_BLUE = "#28d4ce"
+
 open class Utils {
 
     // Creates a UIColor from a Hex string.

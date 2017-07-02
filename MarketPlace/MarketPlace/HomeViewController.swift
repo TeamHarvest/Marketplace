@@ -94,7 +94,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.lbl_often.text = howOften[indexPath.row]
         cell.lbl_date.text = buyDate[indexPath.row]
 
-        cell.backgroundColor = UIColor.gray // make cell more visible
+//        cell.backgroundColor = UIColor.gray // make cell more visible
+        
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         
         return cell
     }

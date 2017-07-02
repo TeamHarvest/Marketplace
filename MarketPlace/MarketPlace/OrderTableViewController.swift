@@ -56,8 +56,9 @@ class OrderTableViewController: UITableViewController {
         btn_banana.layer.borderWidth = 1.0
         btn_banana.layer.borderColor = UIColor.gray.cgColor
         
-        btn_pinMap.layer.borderWidth = 1.0
-        btn_pinMap.layer.borderColor = UIColor.green.cgColor
+//        btn_pinMap.layer.borderWidth = 1.0
+//        btn_pinMap.layer.borderColor = UIColor.white.cgColor
+        btn_pinMap.layer.cornerRadius = 15.0
         
         //How Often
         btn_once.layer.borderWidth = 1.0
@@ -70,7 +71,8 @@ class OrderTableViewController: UITableViewController {
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
         
         btn_order.layer.borderWidth = 1.0
-        btn_order.layer.borderColor = UIColor.green.cgColor
+        btn_order.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
+        btn_order.layer.cornerRadius = 15.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -148,7 +150,7 @@ class OrderTableViewController: UITableViewController {
     //Products
     @IBAction func apple(_ sender: Any) {
         print("apple")
-        btn_apple.layer.borderColor = UIColor.green.cgColor
+        btn_apple.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_orange.layer.borderColor = UIColor.gray.cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
@@ -157,7 +159,7 @@ class OrderTableViewController: UITableViewController {
     @IBAction func orange(_ sender: Any) {
         print("orange")
         btn_apple.layer.borderColor = UIColor.gray.cgColor
-        btn_orange.layer.borderColor = UIColor.green.cgColor
+        btn_orange.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
         tempProduct = "orange"
@@ -166,7 +168,7 @@ class OrderTableViewController: UITableViewController {
         print("mango")
         btn_apple.layer.borderColor = UIColor.gray.cgColor
         btn_orange.layer.borderColor = UIColor.gray.cgColor
-        btn_mango.layer.borderColor = UIColor.green.cgColor
+        btn_mango.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_banana.layer.borderColor = UIColor.gray.cgColor
         tempProduct = "mango"
     }
@@ -175,13 +177,13 @@ class OrderTableViewController: UITableViewController {
         btn_apple.layer.borderColor = UIColor.gray.cgColor
         btn_orange.layer.borderColor = UIColor.gray.cgColor
         btn_mango.layer.borderColor = UIColor.gray.cgColor
-        btn_banana.layer.borderColor = UIColor.green.cgColor
+        btn_banana.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         tempProduct = "banana"
     }
     
     //How Often
     @IBAction func once(_ sender: Any) {
-        btn_once.layer.borderColor = UIColor.green.cgColor
+        btn_once.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_daily.layer.borderColor = UIColor.gray.cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
@@ -189,7 +191,7 @@ class OrderTableViewController: UITableViewController {
     }
     @IBAction func daily(_ sender: Any) {
         btn_once.layer.borderColor = UIColor.gray.cgColor
-        btn_daily.layer.borderColor = UIColor.green.cgColor
+        btn_daily.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
         tempHowOften = "Daily"
@@ -197,7 +199,7 @@ class OrderTableViewController: UITableViewController {
     @IBAction func weekly(_ sender: Any) {
         btn_once.layer.borderColor = UIColor.gray.cgColor
         btn_daily.layer.borderColor = UIColor.gray.cgColor
-        btn_weekly.layer.borderColor = UIColor.green.cgColor
+        btn_weekly.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         btn_monthly.layer.borderColor = UIColor.gray.cgColor
         tempHowOften = "Weekly"
     }
@@ -205,7 +207,7 @@ class OrderTableViewController: UITableViewController {
         btn_once.layer.borderColor = UIColor.gray.cgColor
         btn_daily.layer.borderColor = UIColor.gray.cgColor
         btn_weekly.layer.borderColor = UIColor.gray.cgColor
-        btn_monthly.layer.borderColor = UIColor.green.cgColor
+        btn_monthly.layer.borderColor = Utils.colorWithHexString(COLOR_ACCENT_BLUE).cgColor
         tempHowOften = "Monthly"
     }
 
