@@ -18,6 +18,8 @@
 		F1257FE11F082EB500411090 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE01F082EB500411090 /* HomeViewController.swift */; };
 		F1257FE51F082F0D00411090 /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */; };
 		F1257FE71F08333F00411090 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FE61F08333F00411090 /* OrderTableViewController.swift */; };
+		F1257FEB1F08537D00411090 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FEA1F08537D00411090 /* Utils.swift */; };
+		F1257FED1F0857DA00411090 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1257FEC1F0857DA00411090 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		F1257FE01F082EB500411090 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		F1257FE61F08333F00411090 /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		F1257FEA1F08537D00411090 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F1257FEC1F0857DA00411090 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		F1257FA61F081BB100411090 /* MarketPlace */ = {
 			isa = PBXGroup;
 			children = (
+				F1257FE91F08535C00411090 /* Common */,
 				F1257FDF1F082E8600411090 /* Settings */,
 				F1257FDE1F082E7D00411090 /* Notification */,
 				F1257FDD1F082E6E00411090 /* Monitor */,
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				F1257FE01F082EB500411090 /* HomeViewController.swift */,
+				F1257FEC1F0857DA00411090 /* HomeCollectionViewCell.swift */,
 				F1257FE41F082F0D00411090 /* OrderListTableViewController.swift */,
 				F1257FE61F08333F00411090 /* OrderTableViewController.swift */,
 			);
@@ -175,6 +181,14 @@
 			children = (
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		F1257FE91F08535C00411090 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F1257FEA1F08537D00411090 /* Utils.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +331,11 @@
 				F1257FE51F082F0D00411090 /* OrderListTableViewController.swift in Sources */,
 				F1257FAA1F081BB100411090 /* ViewController.swift in Sources */,
 				F1257FB01F081BB100411090 /* MarketPlace.xcdatamodeld in Sources */,
+				F1257FEB1F08537D00411090 /* Utils.swift in Sources */,
 				F1257FA81F081BB100411090 /* AppDelegate.swift in Sources */,
 				F1257FE71F08333F00411090 /* OrderTableViewController.swift in Sources */,
 				F1257FE11F082EB500411090 /* HomeViewController.swift in Sources */,
+				F1257FED1F0857DA00411090 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

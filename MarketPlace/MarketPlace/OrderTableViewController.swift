@@ -10,14 +10,64 @@ import UIKit
 
 class OrderTableViewController: UITableViewController {
 
+    @IBOutlet var btn_banana: UIButton!
+    @IBOutlet var btn_mango: UIButton!
+    @IBOutlet var btn_orange: UIButton!
+    @IBOutlet var btn_apple: UIButton!
+    
+    @IBOutlet var input_country: UITextField!
+    @IBOutlet var input_city: UITextField!
+    @IBOutlet var btn_pinMap: UIButton!
+    @IBOutlet var input_addr: UITextField!
+    @IBOutlet var input_quantity: UITextField!
+    
+    @IBOutlet var btn_once: UIButton!
+    @IBOutlet var btn_daily: UIButton!
+    @IBOutlet var btn_weekly: UIButton!
+    @IBOutlet var btn_monthly: UIButton!
+    
+    @IBOutlet var input_date: UITextField!
+    @IBOutlet var input_modeOfPay: UITextField!
+    
+    @IBOutlet var btn_order: UIButton!
+    
+    var imageName = [String]()
+    var noOfKg = [String]()
+    var modeOfPayment = [String]()
+    var howOften = [String]()
+    var buyDate = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //Product
+        btn_apple.layer.borderWidth = 1.0
+        btn_apple.layer.borderColor = UIColor.gray.cgColor
+        btn_orange.layer.borderWidth = 1.0
+        btn_orange.layer.borderColor = UIColor.gray.cgColor
+        btn_mango.layer.borderWidth = 1.0
+        btn_mango.layer.borderColor = UIColor.gray.cgColor
+        btn_banana.layer.borderWidth = 1.0
+        btn_banana.layer.borderColor = UIColor.gray.cgColor
+        
+        btn_pinMap.layer.borderWidth = 1.0
+        btn_pinMap.layer.borderColor = UIColor.green.cgColor
+        
+        //How Often
+        btn_once.layer.borderWidth = 1.0
+        btn_once.layer.borderColor = UIColor.gray.cgColor
+        btn_daily.layer.borderWidth = 1.0
+        btn_daily.layer.borderColor = UIColor.gray.cgColor
+        btn_weekly.layer.borderWidth = 1.0
+        btn_weekly.layer.borderColor = UIColor.gray.cgColor
+        btn_monthly.layer.borderWidth = 1.0
+        btn_monthly.layer.borderColor = UIColor.gray.cgColor
+        
+        btn_order.layer.borderWidth = 1.0
+        btn_order.layer.borderColor = UIColor.green.cgColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +77,15 @@ class OrderTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,5 +141,89 @@ class OrderTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //Products
+    @IBAction func apple(_ sender: Any) {
+        print("apple")
+        btn_apple.layer.borderColor = UIColor.green.cgColor
+        btn_orange.layer.borderColor = UIColor.gray.cgColor
+        btn_mango.layer.borderColor = UIColor.gray.cgColor
+        btn_banana.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func orange(_ sender: Any) {
+        print("orange")
+        btn_apple.layer.borderColor = UIColor.gray.cgColor
+        btn_orange.layer.borderColor = UIColor.green.cgColor
+        btn_mango.layer.borderColor = UIColor.gray.cgColor
+        btn_banana.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func mango(_ sender: Any) {
+        print("mango")
+        btn_apple.layer.borderColor = UIColor.gray.cgColor
+        btn_orange.layer.borderColor = UIColor.gray.cgColor
+        btn_mango.layer.borderColor = UIColor.green.cgColor
+        btn_banana.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func banana(_ sender: Any) {
+        print("banan")
+        btn_apple.layer.borderColor = UIColor.gray.cgColor
+        btn_orange.layer.borderColor = UIColor.gray.cgColor
+        btn_mango.layer.borderColor = UIColor.gray.cgColor
+        btn_banana.layer.borderColor = UIColor.green.cgColor
+    }
+    
+    //How Often
+    @IBAction func once(_ sender: Any) {
+        btn_once.layer.borderColor = UIColor.green.cgColor
+        btn_daily.layer.borderColor = UIColor.gray.cgColor
+        btn_weekly.layer.borderColor = UIColor.gray.cgColor
+        btn_monthly.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func daily(_ sender: Any) {
+        btn_once.layer.borderColor = UIColor.gray.cgColor
+        btn_daily.layer.borderColor = UIColor.green.cgColor
+        btn_weekly.layer.borderColor = UIColor.gray.cgColor
+        btn_monthly.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func weekly(_ sender: Any) {
+        btn_once.layer.borderColor = UIColor.gray.cgColor
+        btn_daily.layer.borderColor = UIColor.gray.cgColor
+        btn_weekly.layer.borderColor = UIColor.green.cgColor
+        btn_monthly.layer.borderColor = UIColor.gray.cgColor
+    }
+    @IBAction func monthly(_ sender: Any) {
+        btn_once.layer.borderColor = UIColor.gray.cgColor
+        btn_daily.layer.borderColor = UIColor.gray.cgColor
+        btn_weekly.layer.borderColor = UIColor.gray.cgColor
+        btn_monthly.layer.borderColor = UIColor.green.cgColor
+    }
+
+    //Order
+    @IBAction func order(_ sender: Any) {
+        
+        imageName.append("banana")
+        noOfKg.append("10")
+        modeOfPayment.append("Cash")
+        howOften.append("Daily")
+        buyDate.append("07/01/2017")
+        
+        
+//        imageName[0] = "banana"
+//        noOfKg[0] = "10"
+//        modeOfPayment[0] = "Cash"
+//        howOften[0] = "Daily"
+//        buyDate[0] = "07/01/2017"
+        
+        UserDefaults.standard.set(imageName, forKey: KEY_IMAGE_NAME)
+        UserDefaults.standard.set(noOfKg, forKey: KEY_NO_OF_KG)
+        UserDefaults.standard.set(modeOfPayment, forKey: KEY_MODE_OF_PAYMENT)
+        UserDefaults.standard.set(howOften, forKey: KEY_HOW_OFTEN)
+        UserDefaults.standard.set(buyDate, forKey: KEY_BUY_DATE)
+        
+        UserDefaults.standard.set(true, forKey: KEY_ORDERED)
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
 
 }
